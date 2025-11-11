@@ -4,7 +4,7 @@
   tasks:
     - name: slurp hosts
       ansible.windows.slurp:
-        src: C:\WIndows\System32\drivers\etc\hosts
+        src: C:\Windows\System32\drivers\etc\hosts
       register: hosts
   
     - name: show hosts
