@@ -1,0 +1,4 @@
+- command: 'cat {{ file_to_cat }}'
+  register: cat
+- debug:
+    var: cat
