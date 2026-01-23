@@ -1,0 +1,9 @@
+- hosts: localhost
+  tasks:
+    - name: Check website status with curl
+      ansible.builtin.command: curl -I https://checkip.amazonaws.com
+      register: curl_result
+
+    - name: Display result
+      ansible.builtin.debug:
+        var: curl_result.stdout
